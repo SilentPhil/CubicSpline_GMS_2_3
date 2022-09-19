@@ -30,7 +30,7 @@ function CubicSpline() constructor {
     	__points = _points;
     }
     
-    static update_spline = function()/*->void*/ {
+    static refresh = function()/*->void*/ {
 		__x_cubics = __calc_natural_cubic(__extract_values(POS_FIELD.X));
 		__y_cubics = __calc_natural_cubic(__extract_values(POS_FIELD.Y));
 	}
